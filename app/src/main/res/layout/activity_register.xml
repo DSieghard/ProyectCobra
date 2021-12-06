@@ -22,7 +22,7 @@
         app:layout_constraintTop_toBottomOf="@+id/passwordConfirmTextEdit" />
 
     <TextView
-        android:id="@+id/usernameText"
+        android:id="@+id/usernameField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="39dp"
@@ -46,7 +46,7 @@
         android:text="@string/mail"
         app:layout_constraintEnd_toStartOf="@+id/mailTextEdit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usernameText" />
+        app:layout_constraintTop_toBottomOf="@+id/usernameField" />
 
     <TextView
         android:id="@+id/passwordField"
@@ -74,7 +74,7 @@
         android:text="@string/username"
         app:layout_constraintBottom_toTopOf="@+id/mailTextEdit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/usernameText"
+        app:layout_constraintStart_toEndOf="@+id/usernameField"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -104,7 +104,8 @@
         app:layout_constraintBottom_toTopOf="@+id/passwordConfirmTextEdit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/passwordField"
-        app:layout_constraintTop_toBottomOf="@+id/mailTextEdit" />
+        app:layout_constraintTop_toBottomOf="@+id/mailTextEdit"
+        tools:text="@string/password" />
 
     <EditText
         android:id="@+id/passwordConfirmTextEdit"
@@ -119,7 +120,8 @@
         app:layout_constraintBottom_toTopOf="@+id/registerPassButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/passwordConfirmField"
-        app:layout_constraintTop_toBottomOf="@+id/passwordTextEdit" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextEdit"
+        tools:text="@string/password" />
 
     <EditText
         android:id="@+id/mailTextEdit"

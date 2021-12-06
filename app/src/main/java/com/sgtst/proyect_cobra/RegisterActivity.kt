@@ -7,11 +7,10 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import org.w3c.dom.Text
 
 class RegisterActivity : AppCompatActivity(), View.OnClickListener{
 
-    val activity = this@RegisterActivity
+    private val activity = this@RegisterActivity
 
     private lateinit var passwordField: TextView
     private lateinit var passwordConfirmField: TextView
@@ -42,23 +41,23 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener{
     }
 
     private fun initViews() {
-        passwordField = findViewById<View>(R.id.passwordField) as TextView
-        passwordConfirmField = findViewById<View>(R.id.passwordConfirmField) as TextView
-        usernameField = findViewById<View>(R.id.usernameText) as TextView
-        emailField = findViewById<View>(R.id.emailTextField) as TextView
+        passwordField = (findViewById<View>(R.id.passwordField) as? TextView)!!
+        passwordConfirmField = (findViewById<View>(R.id.passwordConfirmField) as? TextView)!!
+        usernameField = (findViewById<View>(R.id.usernameField) as? TextView)!!
+        emailField = (findViewById<View>(R.id.emailTextField) as? TextView)!!
 
-        passwordEditText = findViewById<View>(R.id.passwordEditText) as EditText
-        passwordConfirmEditText = findViewById<View>(R.id.passwordConfirmTextEdit) as EditText
-        usernameEditText = findViewById<View>(R.id.usernameTextEdit) as EditText
-        emailEditText = findViewById<View>(R.id.emailEditText) as EditText
+        passwordEditText = (findViewById<View>(R.id.passwordEditText) as? EditText)!!
+        passwordConfirmEditText = (findViewById<View>(R.id.passwordConfirmTextEdit) as? EditText)!!
+        usernameEditText = (findViewById<View>(R.id.usernameTextEdit) as? EditText)!!
+        emailEditText = (findViewById<View>(R.id.emailEditText) as? EditText)!!
 
         registerPassButton = findViewById<View>(R.id.registerPassButton) as Button
         backtoLoginButton = findViewById<View>(R.id.backButton) as Button
     }
 
     private fun initListeners() {
-        registerPassButton!!.setOnClickListener(this)
-        backtoLoginButton!!.setOnClickListener(this)
+        registerPassButton.setOnClickListener(this)
+        backtoLoginButton.setOnClickListener(this)
     }
 
     private fun initObjects() {
@@ -104,9 +103,9 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener{
     }
 
     private fun emptyInputEditText() {
-        emailEditText!!.text = null
-        usernameEditText!!.text = null
-        passwordEditText!!.text = null
+        emailEditText.text = null
+        usernameEditText.text = null
+        passwordEditText.text = null
         passwordConfirmEditText.text = null
     }
 
