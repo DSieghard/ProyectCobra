@@ -53,8 +53,8 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun initListeners() {
-        loginButton!!.setOnClickListener(this)
-        registerButton!!.setOnClickListener(this)
+        loginButton.setOnClickListener(this)
+        registerButton.setOnClickListener(this)
     }
 
     private fun initObjects(){
@@ -73,19 +73,19 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
     private fun verifyFromSQLite(){
-        if(!loginValidation!!.isInputEditTextFilled(emailEditText!!, emailTextField!!, getString(R.string.error_message_email))) {
+        if(!loginValidation.isInputEditTextFilled(emailEditText, emailTextField, getString(R.string.error_message_email))) {
             return
         }
-        if(!loginValidation!!.isInputEditTextEmail(emailEditText!!, emailTextField!!, getString(R.string.error_message_email))) {
+        if(!loginValidation.isInputEditTextEmail(emailEditText, emailTextField, getString(R.string.error_message_email))) {
             return
         }
-        if(!loginValidation!!.isInputEditTextFilled(passwordEditText!!, passwordTextField!!, getString(R.string.error_message_password))){
+        if(!loginValidation.isInputEditTextFilled(passwordEditText, passwordTextField, getString(R.string.error_message_password))){
             return
         }
 
-        if (dataBaseHelper!!.checkUser(emailEditText!!.text.toString().trim { it <= ' '}, passwordEditText!!.text.toString().trim { it <= ' '})){
+        if (dataBaseHelper.checkUser(emailEditText.text.toString().trim { it <= ' '}, passwordEditText.text.toString().trim { it <= ' '})){
             val passIntent = Intent(activity, PassActivity::class.java)
-            passIntent.putExtra("EMAIL", emailEditText!!.text.toString().trim { it <= ' '})
+            passIntent.putExtra("EMAIL", emailEditText.text.toString().trim { it <= ' '})
             emptyImputEditText()
             startActivity(passIntent)
         } else {
@@ -94,7 +94,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun emptyImputEditText() {
-        emailEditText!!.text = null
-        passwordEditText!!.text = null
+        emailEditText.text = null
+        passwordEditText.text = null
     }
 }
