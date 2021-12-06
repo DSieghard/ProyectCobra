@@ -137,4 +137,18 @@
         app:layout_constraintStart_toEndOf="@+id/emailText"
         app:layout_constraintTop_toBottomOf="@+id/usernameTextEdit"
         tools:text="@string/mail" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="99dp"
+        android:text="@string/back_to_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerPassButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
