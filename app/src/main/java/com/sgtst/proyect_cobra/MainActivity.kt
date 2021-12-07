@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        title = "PC Fix"
 
         val startbtn = findViewById<Button>(R.id.startButton)
         val offerbtn = findViewById<Button>(R.id.offerButton)
@@ -18,14 +19,14 @@ class MainActivity : AppCompatActivity() {
         val accountbtn = findViewById<Button>(R.id.accountButton)
 
         val accountActivity = Intent(this, LoginActivity::class.java).apply { }
-        val allActivity = Intent(this, AllActivity::class.java).apply { }
-        val aboutActivity = Intent(this, StartActivity::class.java).apply { }
+        val allActivity = Intent(this, OfferActivity::class.java).apply { }
+        val aboutActivity = Intent(this, AboutActivity::class.java).apply { }
         val offerActivity = Intent(this, OfferActivity::class.java).apply { }
 
 
         startbtn.setOnClickListener {
-            Log.i("StartActivity", "Start Button Pressed")
-            Toast.makeText(this, "Start Button Pressed. WIP.", Toast.LENGTH_SHORT).show()
+            Log.i("StartActivity", "About Button Pressed")
+            Toast.makeText(this, "About Button Pressed. WIP.", Toast.LENGTH_SHORT).show()
             startActivity(aboutActivity)
         }
 

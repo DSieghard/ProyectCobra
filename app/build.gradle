@@ -4,14 +4,28 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('/Users/lfeli/Desktop/private_key.pepk')
+            storePassword '8451Sgs48'
+            keyAlias 'release_pc'
+            keyPassword '8451Sgs48'
+        }
+        release {
+            storeFile file('/Users/lfeli/Desktop/keystore_1')
+            storePassword '8451Sgs48'
+            keyAlias 'release_pc2'
+            keyPassword '8451Sgs48'
+        }
+    }
     compileSdk 31
 
     defaultConfig {
         applicationId "com.sgtst.proyect_cobra"
         minSdk 29
         targetSdk 31
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "0.3ab"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -45,6 +59,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'

@@ -29,10 +29,12 @@ class OfferActivity : AppCompatActivity() {
 
         val context = this
         val list = listOf(
-            "Value 01",
-            "Value 02",
-            "Value 03",
-            "Value 04"
+            "Respaldo y configuración de PC",
+            "Mantenimiento general de PC",
+            "Revisión de virus/malware",
+            "Actualización general",
+            "Revisión celular Android",
+            "Revisión celular iOS"
         )
 
         val adapter:ArrayAdapter<String> = object: ArrayAdapter<String>(

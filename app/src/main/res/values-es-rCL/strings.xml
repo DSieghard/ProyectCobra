@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Proyect - Cobra</string>
+    <string name="default_text">Bienvenidos a PCFix</string>
+    <string name="ph_text">Placeholder</string>
+    <string name="start">Sobre nosotros</string>
+    <string name="offer">Ofertas</string>
+    <string name="all">Nuestros productos</string>
+    <string name="account">Cuenta</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Iniciar sesión o registrarse</string>
+    <string name="action_sign_in_short">Iniciar sesión</string>
+    <string name="welcome">Bienvenido!</string>
+    <string name="invalid_username">No es un usuario válido</string>
+    <string name="invalid_password">La contraseña debe ser mayor a 5 caracteres</string>
+    <string name="login_failed">Inicio de sesión fallido</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_dashboard">Vista general</string>
+    <string name="title_notifications">Notificaciones</string>
+    <string name="password">Contraseña</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="login_text">Iniciar sesión</string>
+    <string name="register_text">Registrarse</string>
+    <string name="text_accounts">Todas las cuentas</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_confirm_password">Confirmar Contraseña</string>
+    <string name="text_login">Iniciar sesión</string>
+    <string name="text_register">Registrarse</string>
+    <string name="error_message_name">Ingresa nombre de usuario</string>
+    <string name="error_message_email">Ingresa mail válido</string>
+    <string name="error_message_age">Ingresa edad</string>
+    <string name="error_message_password">Ingresa contraseña</string>
+    <string name="success_message">Registro exitoso</string>
+    <string name="text_not_member">No tienes cuenta? Crea una</string>
+    <string name="text_already_member">Ya eres miembro? Inicia sesión</string>
+    <string name="error_email_exists">Ya existe una cuenta con ese correo</string>
+    <string name="error_password_match">Las contraseñas no coinciden</string>
+    <string name="error_valid_email_password">Mail o contraseña inválidos</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="back_to_login">Regresar a iniciar sesión</string>
+    <string name="nothing_selected">Nada seleccionado</string>
+    <string name="about_us_text">Nuestra dirección</string>
+    <string name="placeholder_text">"    Somos un pequeño negocio partido en 2020, como alternativa a los servicios presenciales. Ofreciendo servicios remotos y soporte remoto a todo tipo de equipamento computacional.     Nuestra visión es crear un servicio sólido, eficiente, y ajustado al mercado.          Llamanos, o puedes visitar nuestra oficina con los botones abajo."</string>
+</resources>
